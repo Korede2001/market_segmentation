@@ -42,6 +42,7 @@ An overview of the general characteristics of the TV-watching customers is gener
 
 After observing the general characteristics of customers on various attributes, Question 8, which required generating market segments based on various characteristics was attempted.
 
+### Exclusion of Highly Correlated Variables
 As a first step, highly correlated variables were excluded in preparation for a principal component analysis. This was done to avoid multicollinearity, which would lead to the unfair weighting of the same concept, skewing the results towards that concept (Sambandam, 2003). A principal component analysis is intended to reduce the data into its essence by indicating the combination of the most informative variables which explain a large variation of the data.
 
 To exclude highly correlated variables, categorical variables were codified using numeric values, to enable computation of correlations. The categorical variables codified include: Marital Status, Work Status, Purchasing decision-maker, Purchasing location, Gender, Education, Favourite Feature, and Technology Adoption.
@@ -52,6 +53,7 @@ Following this codification, a correlation analysis was conducted (by plotting a
 
 ±0.7 was set as the correlation threshold as this is the standard threshold at which multicollinearity is known to be present. Hence, ‘Favorite feature’, ‘Monthly Electronics Spend’, ‘Spending as % of income (%),’ and ‘Purchasing Location’ were excluded from the principal component analysis (PCA) as they have a correlation equal to or greater than 0.7 with other variables.
 
+### Data Reduction Through Principal Component Analysis
 Following the exclusion of highly correlated variables, a principal component analysis (PCA) was conducted to breakdown the dataset into informative dimensions and tell us which variables are the most important in explaining the variation in each dimension and, by extension, the dataset. The percentage variance explained by the various principal components (PCs) is displayed in the graph below:
 
 ![pca_summary](https://user-images.githubusercontent.com/55578569/81503987-b973f200-92de-11ea-88b2-c378ebbf0439.png)
@@ -64,7 +66,60 @@ Next, we zoom into the principal components to see which variables were signific
 
 ![pca_vars2](https://user-images.githubusercontent.com/55578569/81504200-d52bc800-92df-11ea-8a25-76e0b12496b9.png)
 
-From the figures above, we see that ‘Annual spending on electronics’ and ‘Technology Adoption’ are the two most important variables in PC1.
+From the figures above, we see that ‘Annual spending on electronics’ and ‘Technology Adoption’ are the two most important variables in PC1. In PC2, ‘Work Status’ and ‘Marital Status’ are the most important variables.
 
+### Plotting of PCA Results & Cluster Analysis
+The PCA results were then plotted to observe trends, clusters, and relationships between variables in the dataset. Specifically, PC2 was plotted against PC1 as this combination explains the most variation in the dataset.
 
+![pca_biplot](https://user-images.githubusercontent.com/55578569/81504321-6a2ec100-92e0-11ea-8195-de1dbc1fa5cd.png)
 
+**Note:** The lines emanating from the origin indicate the direction and size of the influence of the variables on the principal components (longer lines along a PC indicate stronger influence). 
+
+From the biplot above, we can almost see four clusters of data points (clusters circled in red). This suggests four distinct clusters of people in our dataset that the potential customers could be segmented into. The respondents within each cluster have similarities in certain variables measured in the study. They, however, differ from individuals in other clusters on certain measured variables. This suggests that the four clusters could each serve as unique market segments with differing characteristics and needs. 
+
+To accurately define the four clusters with variables measured in the study, different combinations of variables were tried until combinations that closely captured each of the clusters/segments were determined. These variable combinations were inferred from the loadings and directions of different variables acting on the clusters in the biplot above. 
+
+The final variables combinations and the datapoints that correspond to the segment described by these combinations are shown below. Here the segment names were derived by closer observation of the captured segments. This will be discussed in the next section:
+
+**Note:** As the clusters were inferred, we expect overlap between the clusters. However, the overlap shouldn't be terribly much.
+
+#### Segment 1 (WEALTHY TECH ENTHUSIASTS):
+
+![segment1](https://user-images.githubusercontent.com/55578569/81504472-56d02580-92e1-11ea-876e-732904aec5f6.png)
+
+The circle representing ‘TRUE’ indicates the group of respondents that satisfied the grouping criteria (variable combinations) specified. The grouping criteria here that almost captured the first cluster in the biplot was rich (average annual income of the group was greater than the average annual income of all the respondents), early-adopter professionals that purchase electronics frequently (average purchasing Frequency of the group is less than the average purchasing frequency of all the respondents).
+
+**Note:** The purchasing frequency was defined in the case study as the average number of months between electronics purchases. Hence, a lower purchasing frequency should correspond to a more frequent purchaser.
+
+#### Segment 2 (LOW-INCOME TECH SAVVY SINGLES):
+
+![segment_2](https://user-images.githubusercontent.com/55578569/81505188-70736c00-92e5-11ea-8b06-1752a95a2b62.png)
+
+The circle representing ‘TRUE’ indicates the group of respondents that satisfied the grouping criteria. The grouping criteria here that almost captured the second cluster in the biplot was lower income (average annual income of the group was less than the average annual income of all the respondents), early-adopter professionals that are not married but purchase quite frequently (average purchasing Frequency of the group is less than the average purchasing frequency of all the respondents).
+
+#### Segment 3 (FAMILY-ORIENTED TECH LOYALISTS):
+
+![segment_3](https://user-images.githubusercontent.com/55578569/81505321-322a7c80-92e6-11ea-85cb-c6e0ac49f4ad.png)
+
+The circle representing ‘TRUE’ indicates the group of respondents that satisfied the grouping criteria. The grouping criteria here that almost captured the third cluster was late adopters (reported ‘Late’ for Technology Adoption).
+
+#### Segment 4 (INFREQUENT LOW-SPENDING EARLY ADOPTERS):
+
+![image](https://user-images.githubusercontent.com/55578569/81505481-63f01300-92e7-11ea-97e4-cb6ad22704bc.png)
+
+The circle representing ‘TRUE’ indicates the group of respondents that satisfied the grouping criteria. The grouping criteria here that almost captured the fourth cluster was early adopters that purchase electronics infrequently (average purchasing frequency of the group is greater than the average purchasing frequency of all the respondents in the dataset) and spend a small amount on electronics annually (average annual spending on electronics of the group is less than the average annual spending on electronics of all the respondents in the dataset).
+
+### Segment Description
+
+ After reasonably capturing each inferred segment, each segment was then analyzed and described (through marketing personas) with variables in the dataset. The description and general characteristics of each segment is displayed below:
+ 
+ ![segment_description](https://user-images.githubusercontent.com/55578569/81505744-808d4a80-92e9-11ea-9dc6-9f11ed1bf086.png)
+
+### Additional Insights (Suggestion For TiVo's on Target Segment)
+
+An especially exciting segment to target would be the ‘Wealthy Tech Enthusiasts.’ This segment is wealthy, and on average, spends $700 on electronics annually (see Fig. 5). Hence, they could comfortably purchase TiVo’s product. Furthermore, in the segment description (see Fig. 5), we see that this particular segment has needs that TiVo’s product can address. Firstly, the individuals are extremely busy, and so the time-shifting and schedule control features of TiVo’s product could be very appealing to them. Also, individuals in this segment (mostly men) seem to make purchases desired by the family (possibly to keep the family satisfied while they are busy working). Hence, TiVo could create a marketing initiative targeted at this segment, which emphasizes the time-shifting and schedule control features of their new product, framing the product as a way for such people to include their favorite shows into their busy schedules by recording them for later viewing. TiVo could also employ a psychological marketing approach where it markets the product as a sure way to keep the family happy. By addressing these needs of TV watching flexibility and family satisfaction, through their product's advertisements, TiVo can capture the interest of this segment and increase their product sales. Another benefit of capturing this segment is that they purchase electronics frequently, and so could be a steady revenue source if TiVo develops more need-satisfying products. Also, by satisfying the needs of these affluent early adopters, TiVo can expand to more segments as this group could publicize the product and cause members of other segments to try the product.
+
+### Noted Flaws In the Study and Potential Solutions
+It is, however, important to note that the needs of each segment (in Scheme A and B) were induced from the data and not explicitly reported by the respondents. This indicates a limitation of ThinkAlike’s study: it failed to explore the reasons customers purchase electronics. The ‘why’ is crucial as it allows ThinkAlike to identify customers’ pain points and needs accurately, and these could be leveraged in TiVo’s product advertising and positioning. Furthermore, ThinkAlike asked questions regarding consumers’ attitudes and behavior to technology in general, and this might not translate to TiVo’s product, which is intended to disrupt the industry. The only question ThinkAlike asked that was directly related to TiVo's product, was the respondents’ favorite feature. Lastly, ThinkAlike’s sample size for the study was small and will likely affect the generalizability of its results.
+
+To address the limitations of ThinkAlike’s research, I would start by adding a question that finds out the reasons consumers buy electronics. This question can be phrased in a qualitative form and analyzed for keywords with a technique such as word cloud analysis. This should indicate consumers’ needs, and help TiVo decide which segment’s needs it can most effectively address. I will also ask more questions directly related to TiVo’s product, such as how interested consumers are in the product or how likely they are to purchase the product. I would specifically ask if they will be willing to spend $499 on such a product, to get an idea of the potential demand for the product. I would also increase the sample size to increase the reliability and generalizability of the results. Lastly, I would  reduce the interview time to twenty minutes to reduce the study dropout rate.
