@@ -46,10 +46,11 @@ As a first step, highly correlated variables were excluded in preparation for a 
 
 To exclude highly correlated variables, categorical variables were codified using numeric values, to enable computation of correlations. The categorical variables codified include: Marital Status, Work Status, Purchasing decision-maker, Purchasing location, Gender, Education, Favourite Feature, and Technology Adoption.
 
-Following this codification, a correlation analysis was conducted (by plotting a correlogram) to identify highly correlated variables for exclusion. The correlogram is displayed below:
+Following this codification, a correlation analysis was conducted (by plotting a correlogram) using all the quantitative variables (including the codified ones) to identify highly correlated variables for exclusion. The correlogram is displayed below:
 
 ![correlogram](https://user-images.githubusercontent.com/55578569/81499357-f500c300-92c2-11ea-9c7b-1182bc4de4bd.png)
 
+±0.7 was set as the correlation threshold as this is the standard threshold at which multicollinearity is known to be present. Hence, ‘Favorite feature’, ‘Monthly Electronics Spend’, ‘Spending as % of income (%),’ and ‘Purchasing Location’ were excluded from the principal component analysis (PCA) as they have a correlation equal to or greater than 0.7 with other variables.
 
 
 
