@@ -113,7 +113,7 @@ The circle representing ‘TRUE’ indicates the group of respondents that satis
 
  After reasonably capturing each inferred segment, each segment was then analyzed and described (through marketing personas) with variables in the dataset. The description and general characteristics of each segment is displayed below:
  
- ![segment_description](https://user-images.githubusercontent.com/55578569/81505744-808d4a80-92e9-11ea-9dc6-9f11ed1bf086.png)
+ ![segment_description](https://user-images.githubusercontent.com/55578569/81505932-cbf42880-92ea-11ea-92f0-1ce37e7586c2.png)
 
 ### Additional Insights (Suggestion For TiVo's on Target Segment)
 
