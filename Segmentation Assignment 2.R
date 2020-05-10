@@ -457,5 +457,3 @@ mean(lower_income_professionals$`Annual spending on electronics`)
 
 
 
-
-
