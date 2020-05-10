@@ -24,10 +24,13 @@ Subsequently, bar charts were created to observe the distribution of categorical
 
 ![var_bar](https://user-images.githubusercontent.com/55578569/81493223-a2a9ad00-9296-11ea-9d66-d5e7bb93d7fc.png)
 
-From the figure above, we see that there are more male respondents than female respondents, more married respondents than single respondents, and more early technology adopter than late adopter, to mention a few.
+From the figure above, we see that there are more male respondents than female respondents, more married respondents than single respondents, and more early technology adopter than late adopter, to mention a few. These characteristics will be observed more closely in the industry overview section.
 
 
 ## Industry Overview (Questions 3 & 4)
 
-An overview of the general characteristics of the TV-watching customers is generated using Excel. 
+An overview of the general characteristics of the TV-watching customers is generated using Excel as instructed by the Question prompts. 
+
+![excel_pivot](https://user-images.githubusercontent.com/55578569/81493349-98d47980-9297-11ea-8fb6-702f88aa568d.png)
+
 
