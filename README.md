@@ -52,7 +52,19 @@ Following this codification, a correlation analysis was conducted (by plotting a
 
 ±0.7 was set as the correlation threshold as this is the standard threshold at which multicollinearity is known to be present. Hence, ‘Favorite feature’, ‘Monthly Electronics Spend’, ‘Spending as % of income (%),’ and ‘Purchasing Location’ were excluded from the principal component analysis (PCA) as they have a correlation equal to or greater than 0.7 with other variables.
 
+Following the exclusion of highly correlated variables, a principal component analysis (PCA) was conducted to breakdown the dataset into informative dimensions and tell us which variables are the most important in explaining the variation in each dimension and, by extension, the dataset. The percentage variance explained by the various principal components (PCs) is displayed in the graph below:
 
+![pca_summary](https://user-images.githubusercontent.com/55578569/81503987-b973f200-92de-11ea-88b2-c378ebbf0439.png)
+
+Looking at the x-axis, PC1, PC2, and PC3 solitarily explain about 24%, 17%, and 14% of the variation in the dataset, respectively. The label on the PC3 bar indicates that PC1, PC2, and PC3 cumulatively explain 54.1% of the variance in the dataset.
+
+Next, we zoom into the principal components to see which variables were significant/ important in the various PCs for explaining the variance accounted for by those PCs. The graph below shows this breakdown:
+
+![pca_vars1](https://user-images.githubusercontent.com/55578569/81504179-b4637280-92df-11ea-965f-711b1290dfcc.png)
+
+![pca_vars2](https://user-images.githubusercontent.com/55578569/81504200-d52bc800-92df-11ea-8a25-76e0b12496b9.png)
+
+From the figures above, we see that ‘Annual spending on electronics’ and ‘Technology Adoption’ are the two most important variables in PC1.
 
 
 
