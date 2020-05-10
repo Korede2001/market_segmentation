@@ -34,3 +34,4 @@ An overview of the general characteristics of the TV-watching customers is gener
 ![excel_pivot](https://user-images.githubusercontent.com/55578569/81493349-98d47980-9297-11ea-8fb6-702f88aa568d.png)
 
 
+
