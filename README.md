@@ -27,7 +27,7 @@ Subsequently, bar charts were created to observe the distribution of categorical
 From the figure above, we see that there are more male respondents than female respondents, more married respondents than single respondents, and more early technology adopter than late adopter, to mention a few. These characteristics will be observed more closely in the industry overview section.
 
 
-## Industry Overview (Questions 3 & 4)
+## Industry Overview (Question 3)
 
 An overview of the general characteristics of the TV-watching customers is generated using Excel as instructed by the Question prompts. 
 
@@ -36,6 +36,21 @@ An overview of the general characteristics of the TV-watching customers is gener
 ![excel_pivot2](https://user-images.githubusercontent.com/55578569/81498652-1317f480-92be-11ea-8db1-ad7b551dde00.png)
 
 ![excel_pivot3](https://user-images.githubusercontent.com/55578569/81498708-6a1dc980-92be-11ea-8d2c-23b48d3fac0f.png)
+
+
+## Generating Market Segments Using a Principal Component Analysis and a Cluster Analysis
+
+After observing the general characteristics of customers on various attributes, Question 8, which required generating market segments based on various characteristics was attempted.
+
+As a first step, highly correlated variables were excluded in preparation for a principal component analysis. This was done to avoid multicollinearity, which would lead to the unfair weighting of the same concept, skewing the results towards that concept (Sambandam, 2003). A principal component analysis is intended to reduce the data into its essence by indicating the combination of the most informative variables which explain a large variation of the data.
+
+To exclude highly correlated variables, categorical variables were codified using numeric values, to enable computation of correlations. The categorical variables codified include: Marital Status, Work Status, Purchasing decision-maker, Purchasing location, Gender, Education, Favourite Feature, and Technology Adoption.
+
+Following this codification, a correlation analysis was conducted (by plotting a correlogram) to identify highly correlated variables for exclusion. The correlogram is displayed below:
+
+![correlogram](https://user-images.githubusercontent.com/55578569/81499357-f500c300-92c2-11ea-9c7b-1182bc4de4bd.png)
+
+
 
 
 
